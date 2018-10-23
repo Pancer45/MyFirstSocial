@@ -11,51 +11,14 @@ public class Check {
 			
 			int a = scan.nextInt();
 			int b = scan.nextInt();
-			int c = scan.nextInt();
-			int d = scan.nextInt();
 			
 			
-			System.out.println(min(a, b, c, d));
+			System.out.println(Math.min(a, b));
 			
 		}
 			
 		finally{
 			scan.close();
-		}
-		
-	}
-	
-	static int min (int a, int b, int c, int d) {
-		if ((a!=b) && (a!=c) && (a!=d) && (b!=c) && (b!=d) && (d!=c)){
-			if((a<b) && (a<c) && (a<d)) {
-				return a;
-			}
-			else if((b<a) && (b<c) && (b<d)) {
-				return b;
-			}
-			else if((c<b) && (c<a) && (c<d)) {
-				return c;
-			}
-			else {
-				return d;
-			}
-		}
-		else {
-			if((a<c) && (a == b) && (a<d)) {
-				return a;
-			}
-			else if((c<a) && (c == d) && (c<b)) {
-				return c;
-			}
-			else if((a<c) && (a == d) && (a<b)) {
-				return a;
-			}
-			else if((c<a) && (c == b) && (c<d)) {
-				return c;
-			}
-			else {
-				return b;
-			}
 		}
 		
 	}
